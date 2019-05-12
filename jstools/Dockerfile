@@ -1,5 +1,6 @@
 FROM debian
 
+# basic tools
 RUN set -x \
     && apt-get -qq update \
     && apt-get -qqy install curl \
@@ -10,10 +11,12 @@ RUN set -x \
         sudo \
         wget
 
+# install node
 RUN set -x \
     && curl -sL https://deb.nodesource.com/setup_11.x | bash \
     && apt-get install nodejs -qy
 
+# install npm packages
 RUN set -x \
     && npm install --silent -g \
         gulp-cli \

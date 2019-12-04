@@ -16,7 +16,8 @@
  - webpack-cli
 
 ## Installation
-Assuming that you already have Docker installed. You need to able to run docker commands without sudo.
+Assuming that you already have Docker installed.
+Note: You should be able to run docker commands without sudo.
 
 ## Getting started
 - Build image
